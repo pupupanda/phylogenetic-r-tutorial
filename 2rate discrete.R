@@ -105,8 +105,34 @@ log_likelihood <- function (params){
 }
 
 optim(par=c(r1,r2), fn=log_likelihood, method=c("L-BFGS-B"),lower = 0.001, control = list(fnscale = -1))
+#$par
+#[1] 0.06001567 0.06051988
+
+#$value
+#[1] -40.64676
 
 
 
 fitARD<-ace(feed.mode.in,eel.tree,model="ARD",type="discrete")
 fitARD
+
+   # Ancestral Character Estimation
+
+#Call: ace(x = feed.mode.in, phy = eel.tree, type = "discrete", model = "ARD")
+
+  #  Log-likelihood: -40.64675 
+
+#Rate index matrix:
+#  1 2
+#1 . 2
+#2 1 .
+
+#Parameter estimates:
+ #rate index estimate std-err
+       #   1   0.0604  0.0352
+        #  2   0.0599  0.0326
+
+#Scaled likelihoods at the root (type '...$lik.anc' to get them for all nodes):
+#  1   2 
+#0.5 0.5 
+
