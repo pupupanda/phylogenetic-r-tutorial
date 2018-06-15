@@ -1,6 +1,6 @@
  phylogenetic-r-tutorial references
  
- #eel data 
+ #input data 
  
  #David C. Collar, Peter C. Wainwright, Michael E. Alfaro, Liam J. Revell & Rita S. Mehta Nature Communications volume 5, Article number: 5505 (2014)
  
