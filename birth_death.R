@@ -5,8 +5,7 @@ library(BioGeoBEARS)
 #R code for the ML for a birth-death model
 #This model is a model which allows species to speciate with a rate lamba, as well as to die with a rate mu
 #In this model, clades are expected growing exponentially at the net diversification rate.
-wd <- ("D:/2018 semster 1/Bioinf 702/assignment 4")
-setwd(wd)
+
 
 #load tree data into R
 tree <- read.tree("elopomorph.tre")
