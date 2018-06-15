@@ -2,8 +2,7 @@ library(phytools)
 
 #2 rate Markov model for a discrete binary charater
 
-wd <- ("D:/2018 semster 1/Bioinf 702/assignment 4")
-setwd(wd)
+
 #read in data
 X<-read.csv("elopomorph.csv",row.names=1)
 feed.mode<-setNames(X[,1],rownames(X))
