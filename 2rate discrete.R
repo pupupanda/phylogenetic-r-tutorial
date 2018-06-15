@@ -86,7 +86,7 @@ log_likelihood <- function (params){
     #decendent 2
     des2 <- e2[j]
     
-    multiply the rate matrix and each possible descendants
+    #multiply the rate matrix and each possible descendants
     v.l <- expm(Q * EL[i]) %*% liks[des1, ]
     v.r <- expm(Q * EL[j]) %*% liks[des2, ]
     v <- v.l * v.r
